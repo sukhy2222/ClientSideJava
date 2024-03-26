@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="video-bg">
+            <source src="./video (720p).mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h1>Smoothie Order Form</h1>
+            <form id="smoothieForm">
+                <label for="fruit">Select fruit:</label>
+                <select id="fruit" name="fruit"></select><br><br>
+                
+                <label for="liquid">Select liquid:</label>
+                <select id="liquid" name="liquid"></select><br><br>
+                
+                <label for="protein">Select protein:</label>
+                <select id="protein" name="protein"></select><br><br>
+
+                <button type="button" onclick="submitOrder()">Submit Order</button>
+            </form>
+            <div id="smoothieOutput"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
